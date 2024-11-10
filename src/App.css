@@ -1,0 +1,49 @@
+.Header_button button{
+position: relative;
+transition: .3s ease-in-out;
+}
+.Header_button button::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: rgb(59 130 246 / 1);
+    transition: .3s ease-in-out;
+}.Header_button button:hover::after{
+    width: 100%;  
+}
+.gpt{
+    position: relative;
+}
+.gpt::before{
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+   border-top-right-radius: 100%;
+   transition: .5s ease-in-out;
+    background-color: rgb(250 204 21 / 1);
+}
+.gpt span::before{
+content: "";
+position: absolute;
+height: 0%;
+width: 0%;
+right: 0;
+top: 0;
+border-bottom-left-radius: 100%;
+
+transition: .5s ease-in-out;
+background-color: rgb(250 204 21 / 1);
+}
+.gpt:hover::before ,.gpt:hover span::before {
+width: 50%;
+height: 100%;
+}
+*{
+    transition: .4s ease-in-out;
+}
